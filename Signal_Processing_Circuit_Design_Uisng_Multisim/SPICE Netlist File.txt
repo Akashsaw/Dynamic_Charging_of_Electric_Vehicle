@@ -1,0 +1,85 @@
+** Signal Filters Circuit | DWC **
+*
+* Multisim Live SPICE netlist
+*
+*
+
+* --- Circuit Topology ---
+
+* Component: C1
+cC1 2 3 1.5e-9 
+
+* Component: C2
+cC2 3 5 1.5e-9 
+
+* Component: C3
+cC3 1 0 3e-9 
+
+* Component: C4
+cC4 10 0 8.584e-8 
+
+* Component: C5
+cC5 8 6 1.53e-9 
+
+* Component: C6
+cC6 8 0 8.584e-8 
+
+* Component: L1
+lL1 10 6 0.00008197 
+
+* Component: L2
+lL2 10 0 0.00000146 
+
+* Component: L3
+lL3 8 0 0.00000146 
+
+* Component: R1
+rR1 2 1 1310 VIRTUAL_RESISTANCE_R1 
+
+* Component: R2
+rR2 1 5 1310 VIRTUAL_RESISTANCE_R2 
+
+* Component: R3
+rR3 3 0 654 VIRTUAL_RESISTANCE_R3 
+
+* Component: R4
+rR4 5 0 1000 VIRTUAL_RESISTANCE_R4 
+
+* Component: R5
+rR5 7 10 1000 VIRTUAL_RESISTANCE_R5 
+
+* Component: R6
+rR6 8 0 1000 VIRTUAL_RESISTANCE_R6 
+
+* Component: V1
+vV1 2 0 dc 0 ac 1 0 
+ + distof1 0 0 
+ + distof2 0 0 
+ + sin ( 0 5 1 0 0 0 )
+
+* Component: V2
+vV2 7 0 dc 0 ac 1 0 
+ + distof1 0 0 
+ + distof2 0 0 
+ + sin ( 0 5 1 0 0 0 )
+
+
+* --- Circuit Models ---
+
+* R1 model
+.model VIRTUAL_RESISTANCE_R1 r(    )
+
+* R2 model
+.model VIRTUAL_RESISTANCE_R2 r(    )
+
+* R3 model
+.model VIRTUAL_RESISTANCE_R3 r(    )
+
+* R4 model
+.model VIRTUAL_RESISTANCE_R4 r(    )
+
+* R5 model
+.model VIRTUAL_RESISTANCE_R5 r(    )
+
+* R6 model
+.model VIRTUAL_RESISTANCE_R6 r(    )
